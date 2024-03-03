@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'ANGILAR TO DEEP HDKDN';
+  title = 'ANGULAR TO DEEP HDKDN';
+  name="Tharindu"
 }
