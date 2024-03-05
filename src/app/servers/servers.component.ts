@@ -9,4 +9,12 @@ export class ServersComponent {
   alertFunction() {
     alert('Hello! This is a Warning');
   }
+
+  allowUser = false;
+
+  constructor() {
+    setTimeout(() => {
+      this.allowUser = true;
+    }, 2000);
+  }
 }
