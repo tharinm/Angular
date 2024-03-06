@@ -6,9 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './servers.component.css',
 })
 export class ServersComponent {
+  serverName = '';
   alertFunction() {
     alert('Hello! This is a Warning');
   }
+
+  serverCreationStatus = 'no server was created';
 
   allowUser = false;
 
@@ -16,5 +19,13 @@ export class ServersComponent {
     setTimeout(() => {
       this.allowUser = true;
     }, 2000);
+  }
+
+  onCreateServer() {
+    this.serverCreationStatus = 'Server was created';
+  }
+
+  onUpdateServer(event: any) {
+    this.serverName = event.target.value;
   }
 }
