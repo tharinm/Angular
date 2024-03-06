@@ -2,5 +2,5 @@
 
 <div class="d-flex flex-column">
   <p>{{ getName }}</p>
-  <button class="primary"></button>
+  <button class="primary" [(disabled)]="!getName" (click)="setEmpty()">Check Empty</button>
 </div>
