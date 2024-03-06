@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './servers.component.css',
 })
 export class ServersComponent {
-  serverName = '';
+  serverName = 'Hello';
   alertFunction() {
     alert('Hello! This is a Warning');
   }
@@ -22,7 +22,7 @@ export class ServersComponent {
   }
 
   onCreateServer() {
-    this.serverCreationStatus = 'Server was created';
+    this.serverCreationStatus = this.serverName
   }
 
   // onUpdateServer(event: any) {
