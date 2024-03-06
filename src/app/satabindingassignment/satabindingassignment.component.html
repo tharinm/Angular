@@ -2,5 +2,8 @@
 
 <div class="d-flex flex-column">
   <p>{{ getName }}</p>
-  <button class="primary" [(disabled)]="!getName" (click)="setEmpty()">Check Empty</button>
+  <p *ngIf="!getName" class="ngf">Only visible if 'someCondition' is true</p>
+  <button class="primary" [(disabled)]="!getName" (click)="setEmpty()">
+    Check Empty
+  </button>
 </div>
