@@ -1,2 +1,3 @@
-<p>Hello Im new here {{ serverId }}</p>
-<p></p>
+<p [ngStyle]="{ backgroundColor: getColor() }">
+  Hello Im new here {{ serverId }} & {{ serverStatus }}
+</p>
