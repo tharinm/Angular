@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
     AppComponent,
  
   ],
-  imports: [BrowserModule, ],  // Add FormsModule to the imports array
+  imports: [BrowserModule, ],  
   providers: [],
   bootstrap: [AppComponent],
 })
