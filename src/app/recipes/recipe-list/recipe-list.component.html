@@ -5,7 +5,11 @@
 </div>
 <div class="row">
   <div class="col-xs-12">
-    <a href="#" class="list-group-item clearfix" *ngFor="let recipe of recipes">
+    <a
+      href="#"
+      class="list-group-item clearfix d-flex justify-content-between"
+      *ngFor="let recipe of recipes"
+    >
       <div class="pull-left">
         <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
         <p class="list-group-item-text">{{ recipe.description }}</p>
@@ -21,3 +25,5 @@
     </a>
   </div>
 </div>
+
+<app-recipe-item></app-recipe-item>
